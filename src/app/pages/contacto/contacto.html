@@ -1,1 +1,85 @@
-<p>contacto works!</p>
+<div class="main-container">
+  <div class="header">
+    <h1>Contacto</h1>
+    <p>¿Interesado en trabajar juntos? ¡Hablemos!</p>
+  </div>
+
+  <div class="body">
+    <div class="informacion-contacto">
+      <h3>Información de Contacto</h3>
+
+      <div class="card-contacto">
+        <div class="icono">
+          <span class="material-symbols-outlined"> mail </span>
+        </div>
+        <div class="texto-contacto">
+          <p>Email</p>
+          <p>matecamilion05@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="card-contacto">
+        <div class="icono">
+          <span class="material-symbols-outlined"> phone_forwarded </span>
+        </div>
+        <div class="texto-contacto">
+          <p>Teléfono</p>
+          <p>+54 223 582 7465</p>
+        </div>
+      </div>
+
+      <div class="card-contacto">
+        <div class="icono">
+          <span class="material-symbols-outlined" id="spot"> location_on </span>
+        </div>
+        <div class="texto-contacto">
+          <p>Ubicación</p>
+          <p>Mar del Plata, Argentina</p>
+        </div>
+      </div>
+
+      <div class="disponibilidad">
+        <h3>Disponibilidad</h3>
+        <p>
+          Actualmente estoy abierto a oportunidades laborales full-time, freelance, o colaboraciones
+          en proyectos interesantes. ¡No dudes en contactarme!
+        </p>
+      </div>
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="formulario-contacto">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" formControlName="nombre" type="text" placeholder="Tu nombre" />
+      @if (contactForm.get('nombre')?.invalid && contactForm.get('nombre')?.touched) {
+        <span class="error">El nombre es requerido</span>
+      }
+
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" placeholder="tu.email@example.com" />
+      @if (contactForm.get('email')?.touched) {
+        @if (contactForm.get('email')?.hasError('required')) {
+          <span class="error">El email es requerido</span>
+        }
+        @if (contactForm.get('email')?.hasError('email')) {
+          <span class="error">El email no es válido</span>
+        }
+      }
+
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        formControlName="mensaje"
+        placeholder="¿En qué puedo ayudarte?"
+      ></textarea>
+      @if (contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched) {
+        <span class="error">El mensaje es requerido</span>
+      }
+
+      <button type="submit" [disabled]="contactForm.invalid">Enviar Mensaje</button>
+
+      @if (enviado) {
+        <p class="exito">✓ Mensaje enviado con éxito</p>
+      }
+    </form>
+  </div>
+</div>

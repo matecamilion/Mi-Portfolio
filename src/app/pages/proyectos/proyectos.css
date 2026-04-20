@@ -1,0 +1,83 @@
+.main-container {
+  margin-top: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+}
+
+.proyectos{
+    margin-top: 4rem;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.proyecto-card{
+    text-decoration: none;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+     transition: box-shadow 0.4s ease, transform 0.4s ease;
+
+}
+
+.proyecto-card:hover{
+    transform: translateY(-4px);       /* sube levemente */
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.22);  /* sombra más intensa */
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    
+}
+.proyecto-card h3{
+    font-size: 1.3rem;
+    margin: 1rem 5px;
+    color: #364153;
+}
+
+.card-content p{
+    font-size: 0.9rem;
+    color: #364153;
+}
+
+.proyecto-card ul{
+   margin: 5px 5px 5px 2rem;
+   font-size: 0.9rem;
+   color: #364153;
+   
+}
+.proyecto-card a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.card-content{
+    padding: 10px 14px 14px 14px;
+}
+
+
+.tecnologias{
+    display: flex;
+}
+
+.tecnologias p{
+    padding: 4px 6px;
+    border-radius: 20px;
+    margin: 3px;
+    background-color: #dbeafe;
+    color: #1447e6;
+}
