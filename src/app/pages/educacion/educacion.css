@@ -1,0 +1,97 @@
+.main-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulos{
+    text-align: center;
+    margin: 1rem;
+}
+
+.contenedor-estudio-principal{
+    width: 60vw;
+    padding: 30px 6rem;
+    border-radius: 15px;
+    background-color: #f5f5ff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+#gorro-graduacion{
+    background-color: #155dfc;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-right: 1rem;
+    font-size: xx-large;
+}
+.nombre-estudio{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.informacion-estudio-principal{
+    display: flex;
+}
+
+.box{
+    height: 20vh;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+#medalla-promedio{
+    color: rgb(252, 167, 30);
+    margin-right: 5px;
+}
+
+#promedio{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #155dfc;
+}
+
+#libro-estado { 
+    color: rgb(112, 220, 112);
+    margin-right: 5px;
+}
+
+.titulos-informacion{
+    display: flex;
+    align-items: center;
+}
+
+.titulos-informacion p{
+    font-weight: bold;
+
+}
+
+.mas-estudios{
+    margin-top: 2rem;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-estudio{
+    padding: 15px;
+    width: 50%;
+    border-left: 5px solid #155dfc;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #f5f5ff;
+    height: 15vh;
+}
+
+.box-title{
+    font-weight: bold;
+
+}
