@@ -1,17 +1,20 @@
-
 <header>
-
-<div class="div-container">
+  <div class="div-container">
     <div>
-        <a routerLink="/home" class="logo">< Mateo Camilion/></a>
+      <a href="#home" class="logo">&lt; Mateo Camilion/&gt;</a>
     </div>
-    <nav class="nav">
-        <a routerLink="/sobre-mi">Sobre Mi</a>
-        <a routerLink="/educacion">Educacion</a>
-        <a routerLink="/habilidades">Habilidades</a>
-        <a routerLink="/proyectos">Proyectos</a>
-        <a routerLink="/experiencia">Experiencia</a>
-        <a routerLink="/contacto">Contacto</a>
-    </nav>
-</div>
+
+    <button class="menu-toggle" (click)="menuOpen = !menuOpen" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <nav class="nav" [class.open]="menuOpen">
+  <a (click)="scroll('sobre-mi')">Sobre Mi</a>
+  <a (click)="scroll('educacion')">Educacion</a>
+  <a (click)="scroll('habilidades')">Habilidades</a>
+  <a (click)="scroll('proyectos')">Proyectos</a>
+  <a (click)="scroll('experiencia')">Experiencia</a>
+  <a (click)="scroll('contacto')">Contacto</a>
+</nav>
+  </div>
 </header>

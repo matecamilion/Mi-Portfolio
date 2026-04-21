@@ -81,3 +81,64 @@
     background-color: #dbeafe;
     color: #1447e6;
 }
+
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 2.5rem;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .proyectos {
+    width: 100%;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .proyecto-card img {
+    height: 180px;
+  }
+
+  .proyecto-card h3 {
+    font-size: 1.15rem;
+    margin: 0.75rem 0;
+  }
+
+  .card-content {
+    padding: 14px;
+  }
+
+  .card-content p,
+  .proyecto-card ul {
+    font-size: 0.95rem;
+  }
+
+  .proyecto-card ul {
+    margin: 8px 0 0 1.2rem;
+  }
+
+  .tecnologias {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tecnologias p {
+    margin: 0;
+  }
+}

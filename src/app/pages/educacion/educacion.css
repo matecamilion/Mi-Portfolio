@@ -97,3 +97,77 @@
     font-weight: bold;
 
 }
+
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 2.5rem;
+    padding: 0 16px;
+  }
+
+  .titulos {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .titulos h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .titulos p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contenedor-estudio-principal {
+    width: 100%;
+    padding: 24px 20px;
+  }
+
+  .nombre-estudio {
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  #gorro-graduacion {
+    margin-right: 0;
+    flex-shrink: 0;
+  }
+
+  .nombre-estudio h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .informacion-estudio-principal {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 16px;
+  }
+
+  #promedio {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .mas-estudios {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contenedor-estudio {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
